@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-bold text-2xl text-emerald-700 leading-tight">📚 Data Mahasiswa</h2>
+        <h2 class="font-bold text-2xl text-emerald-700 leading-tight">Data Mahasiswa</h2>
     </x-slot>
 
     <div class="py-8">
