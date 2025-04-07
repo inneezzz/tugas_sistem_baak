@@ -24,20 +24,30 @@
 
     <div class="min-h-screen flex flex-row">
 
-        <!-- Sidebar -->
-        <aside class="w-64 bg-white border-r shadow-md">
-            <div class="p-4 font-bold text-lg border-b">
+       <!-- Sidebar -->
+        <aside class="w-64 bg-emerald-600 shadow-lg">
+            <div class="p-4 font-bold text-lg text-white border-b border-emerald-500">
                 {{ config('app.name', 'Laravel') }}
             </div>
             <nav class="mt-4 px-4">
                 <ul class="space-y-2">
-                    <li><a href="{{ route('dashboard') }}"
-                            class="block py-2 text-gray-700 hover:text-blue-600">Dashboard</a></li>
-                    <li><a href="{{ route('mahasiswa.index') }}"
-                            class="block py-2 text-gray-700 hover:text-blue-600">Mahasiswa</a></li>
+                    <li>
+                        <a href="{{ route('dashboard') }}"
+                        class="block py-2 px-3 rounded-md text-white hover:bg-emerald-500 hover:text-white transition font-medium">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('mahasiswa.index') }}"
+                        class="block py-2 px-3 rounded-md text-white hover:bg-emerald-500 hover:text-white transition font-medium">
+                            Mahasiswa
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </aside>
+
+
 
         <!-- Main Content -->
         <div class="flex-1 flex flex-col">
